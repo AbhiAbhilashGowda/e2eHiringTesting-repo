@@ -1,4 +1,4 @@
-package com.tutorialsninja.automation.config;
+package com.automation.config;
 
 public interface ConfigurationReader {
 	

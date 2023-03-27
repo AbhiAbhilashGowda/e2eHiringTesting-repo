@@ -1,4 +1,4 @@
-package com.tutorialsninja.automation.framework;
+package com.automation.framework;
 
 import java.util.List;
 import java.util.Random;
@@ -9,7 +9,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-import com.tutorialsninja.automation.base.Base;
+import com.automation.base.Base;
 
 public class Elements {
 

@@ -1,9 +1,9 @@
-package com.tutorialsninja.automation.base;
+package com.automation.base;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
-import com.tutorialsninja.automation.config.ConfigurationReader;
+import com.automation.config.ConfigurationReader;
 
 public class Base {
 	

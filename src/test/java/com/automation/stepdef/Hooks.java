@@ -1,12 +1,12 @@
-package com.tutorialsninja.automation.stepdef;
+package com.automation.stepdef;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-import com.tutorialsninja.automation.base.Base;
-import com.tutorialsninja.automation.config.PropertyFileReader;
-import com.tutorialsninja.automation.framework.Browser;
-import com.tutorialsninja.automation.util.PathHelper;
+import com.automation.base.Base;
+import com.automation.config.PropertyFileReader;
+import com.automation.framework.Browser;
+import com.automation.util.PathHelper;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
