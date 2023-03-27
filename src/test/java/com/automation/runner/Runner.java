@@ -7,7 +7,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features={"classpath:FeatureFiles/Uatlogin.feature",
-		                   "classpath:FeatureFiles/Mentorship.feature"
+		                   "classpath:FeatureFiles/Mentorship.feature",
+	                     	//"classpath:FeatureFiles/CampusHiring.feature"
 
 						  },
 glue={"classpath:com.automation.stepdef"},
