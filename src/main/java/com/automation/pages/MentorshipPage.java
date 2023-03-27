@@ -28,13 +28,13 @@ public MentorshipPage() {
 	public static WebElement clickonoverview ;
 	@FindBy(xpath = "//button[normalize-space()='Register for Orientation']")
 	public static WebElement clickonorientation ;
-	@FindBy(xpath = "")
+	@FindBy(xpath = "(//input[@placeholder='Enter your name'])[1]")
 	public static WebElement entername ;
 	@FindBy(xpath = "//input[@placeholder='Enter your mail id']")
 	public static WebElement enteremailinmentorshipgorm ;
 	@FindBy(xpath = "//input[@placeholder='Enter your answer']")
 	public static WebElement enterphonenumber ;
-	@FindBy(xpath = "//input[@id='rc_select_0']")
+	@FindBy(xpath = "//div[@class='ant-select-selector']")
 	public static WebElement selectmentorshipprogram ;
 	@FindBy(xpath = "//div[contains(text(),'Java Developer')]")
 	public static WebElement selectjavadevelper;

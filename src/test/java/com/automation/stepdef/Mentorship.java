@@ -1,5 +1,8 @@
 package com.automation.stepdef;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.JavascriptExecutor;
 
 import com.automation.base.Base;
@@ -39,12 +42,19 @@ public class Mentorship extends Base {
 		Elements.click(MentorshipPage.clickonorientation);
 		Thread.sleep(2000);
 	}
-
+ 
 	@Then("^I enter name \"([^\"]*)\"$")
 	public void i_enter_name(String name) throws Throwable {
+		Set <String> handles =driver.getWindowHandles();
+		Iterator<String> it = handles.iterator();
+		//iterate through your windows
+		while (it.hasNext()){
+		String parent = it.next();
+		String newwin = it.next();
+		driver.switchTo().window(newwin);
 		Thread.sleep(2000);
 		Elements.TypeText(MentorshipPage.entername, name);
-		Thread.sleep(2000);
+		}
 
 	}
 
@@ -68,7 +78,12 @@ public class Mentorship extends Base {
 	public void i_select_java_developer_in_mentorship_program() throws Throwable {
 		Thread.sleep(2000);
 		Elements.click(MentorshipPage.selectmentorshipprogram);
+		Thread.sleep(2000);
 		Elements.click(MentorshipPage.selectjavadevelper);
+		JavascriptExecutor jse = (JavascriptExecutor) driver;
+		jse.executeScript("window.scrollBy(0,300)", " ");
+		Thread.sleep(2000);
+
 
 	}
 
