@@ -1,18 +1,12 @@
 package com.automation.stepdef;
 
-import org.junit.Assert;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
-import cucumber.api.junit.Cucumber;
-import org.junit.runner.RunWith;
-
 import com.automation.base.Base;
 import com.automation.framework.Elements;
-
 import com.automation.pages.UatloginPage;
 
-
-import cucumber.api.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class Uatlogin {
 
