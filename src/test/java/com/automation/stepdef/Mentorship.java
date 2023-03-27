@@ -42,7 +42,7 @@ public class Mentorship extends Base {
 
 	@Then("^I enter name \"([^\"]*)\"$")
 	public void i_enter_name(String name) throws Throwable {
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		Elements.TypeText(MentorshipPage.entername, name);
 		Thread.sleep(2000);
 

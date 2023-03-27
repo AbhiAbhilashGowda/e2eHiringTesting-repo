@@ -28,7 +28,7 @@ public MentorshipPage() {
 	public static WebElement clickonoverview ;
 	@FindBy(xpath = "//button[normalize-space()='Register for Orientation']")
 	public static WebElement clickonorientation ;
-	@FindBy(xpath = "(//input[@placeholder='Enter your name'])[1]")
+	@FindBy(xpath = "")
 	public static WebElement entername ;
 	@FindBy(xpath = "//input[@placeholder='Enter your mail id']")
 	public static WebElement enteremailinmentorshipgorm ;
