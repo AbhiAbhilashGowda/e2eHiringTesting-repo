@@ -7,20 +7,22 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.automation.base.Base;
 
-public class UatloginPage {
+public class UatPage {
 	
-public UatloginPage() {
+public UatPage() {
 		
 		PageFactory.initElements(Base.driver, this);
 		
 	}
-	
+
 	@FindBy(xpath = "//input[@placeholder='Email ID']")
-	public static WebElement enteremail;
-	
+	public static WebElement enterusername;
+
 	@FindBy(xpath = "//input[@placeholder='Password']")
 	public static WebElement enterpassword;
-	
+
 	@FindBy(xpath = "//button[@class='ant-btn ant-btn-submit ant-btn-block styledComponents__StyledButton-sc-4947a9-0 gDuwDr']")
-	public static WebElement clicklogin;
+	public static WebElement clickOnLoginButton;
+	
+	
 }
