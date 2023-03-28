@@ -7,12 +7,13 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features={"classpath:FeatureFiles/Uatlogin.feature",
-		                   "classpath:FeatureFiles/Mentorship.feature",
-	                     	//"classpath:FeatureFiles/CampusHiring.feature"
-
+		                   //"classpath:FeatureFiles/Mentorship.feature",
+	                     	//"classpath:FeatureFiles/CampusHiring.feature",
+		                    "classpath:FeatureFiles/Jobs.feature"
 						  },
 glue={"classpath:com.automation.stepdef"},
-plugin={"html:target/cucumber_html_report"})
+plugin={"html:target/cucumber_html_report"},
+tags= {"@Jobss","@one"})
 
 public class Runner {
 	
