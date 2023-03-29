@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 						  },
 glue={"classpath:com.automation.stepdef"},
 plugin={"html:target/cucumber_html_report"},
-tags= {"@Jobss","@one"})
+//tags= {"@Jobss","@one"})
 
 public class Runner {
 	
